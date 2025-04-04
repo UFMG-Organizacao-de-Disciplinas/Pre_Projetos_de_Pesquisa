@@ -1,0 +1,122 @@
+\pretextual
+
+\centerline{\large UNIVERSIDADE FEDERAL DE MINAS GERAIS}
+\centerline{\large PROGRAMA DE PÓS-GRADUAÇÃO EM FÍSICA}
+
+\vspace{5cm}
+
+\centerline{\large FULANO DE TAL}
+
+\vspace{5.5cm}
+
+\centerline{\Large Modelo para teses e dissertações do departamento de Física}
+\centerline{\Large da UFMG}
+
+\vspace{10cm}
+
+
+\centerline{\large BELO HORIZONTE}
+\centerline{\large 20XX}
+\newpage
+
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica e deverá ser usado para teses 
+%   e dissertações. Para projetos, favor retirar o *)
+% ---
+\imprimirfolhaderosto*
+% ---
+
+% ---
+% Inserir a ficha bibliografica
+% ---
+
+%  A ficha catalografica, preparada pela biblioteca do departamento de física da UFMG é
+% um elemento obrigatório para teses e dissertações. Inclua o arquivo pdf fornecido de acordo
+% com o comando abaixo, modificando o nome e a localização do arquivo quando necessário.
+%
+\begin{fichacatalografica}
+    \includepdf{fig/ficha-catalografica.pdf}
+\end{fichacatalografica}
+
+% ---
+% Inserir folha de aprovação
+% ---
+
+% A folha de aprovação é um elemento obrigatório da versão final do trabalho e deverá ser incluído
+% conforme comando abaixo.
+%
+\begin{folhadeaprovacao}
+     \includepdf{fig/folhadeaprovação.pdf}
+     \end{folhadeaprovacao}
+% ---
+% Dedicatória - OPCIONAL
+% ---
+%\begin{dedicatoria}
+%   \vspace*{\fill}
+%   \centering
+%   \noindent
+%   \textit{\textbf{Dedicatória. Elemento opcional. Não há formatação a ser seguida.}\\
+%    Este trabalho é dedicado às crianças adultas que,\\
+%   quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}
+%\end{dedicatoria}
+% ---
+
+% ---
+% Agradecimentos
+% ---
+\begin{agradecimentos}
+Os agradecimentos são obrigatórios para os bolsistas e opcional para os demais. 
+\end{agradecimentos}
+% ---
+% ---
+% Epígrafe - OPCIONAL
+% ---
+%\begin{epigrafe}
+%    \vspace*{\fill}
+%	\begin{flushright}
+%		\textit{\textbf{Epígrafe. Elemento opcional. Não há formatação a ser seguida.}\\
+%		``Não vos amoldeis às estruturas deste mundo, \\
+%		mas transformai-vos pela renovação da mente, \\
+%		a fim de distinguir qual é a vontade de Deus: \\
+%		o que é bom, o que Lhe é agradável, o que é perfeito.\\
+%		(Bíblia Sagrada, Romanos 12, 2)}
+%	\end{flushright}
+%\end{epigrafe}
+% ---
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+\input{tex/resumo}
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+\input{tex/abstract}
+\end{resumo}
+
+% ---
+% LISTAS - CONTEÚDO DE CARÁTER OPCIONAL
+% ---
+\input{tex/listas-opcional}
+
+
+% ---
+% O SUMARIO É OBRIGATÓRIO
+% ---
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+

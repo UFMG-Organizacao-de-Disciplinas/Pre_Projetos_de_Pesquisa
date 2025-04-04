@@ -1,0 +1,166 @@
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% Modelo de trabalho acadêmico (Dissertações e Teses) do Programa de Pós-
+% graduação em Física da Universidade Federal de Minas Gerais.
+% Esse modelo é baseado na classe abntex2 (http://www.abntex.net.br)
+% 
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	twoside,			% para impressão em frente e verso. Oposto a oneside ---- Este comando ajusta automaticamente as margens
+	a4paper,			% tamanho do papel. 
+	english,			% idioma adicional para hifenização
+%	french,				% idioma adicional para hifenização basta retirar o comentário para utilizar
+%	spanish,			% idioma adicional para hifenização basta retirar o comentário para utilizar
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+
+% ---
+% Pacotes básicos 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}			% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}			% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{relsize}				% usado para definir tamanho de fontes no sumário
+% ---
+
+% ---
+% Pacotes úteis 
+% ---
+\usepackage[final]{pdfpages}		% Para incluir arquivos pdf externos
+\usepackage{amsmath,amssymb,amsthm}	% Pacote para melhorar apresentação de fórmulas matemáticas, símbolos e teoremas, respectivamente	
+\usepackage{pdflscape} 		% Pacote para adicionar páginas em formato paisagem
+\usepackage{multirow}			% Permite criar céluas com várias colunas ou linhas em tabelas
+\usepackage{adjustbox}			% Pacote para ajustar a largura e altura de objetos como tabelas
+%\usepackage{imakeidx}			% Gera o índice
+% ---
+
+\usepackage{lipsum}	 % pacote usado para gerar os textos dos apêndices e anexos
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Inclui um link nas referências para a página onde o documento foi citado.
+\usepackage{cite}
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{brazil}
+
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\input{tex/dados-do-trabalho}
+
+% ---
+% Configurações de aparência do PDF final
+% ---
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=false,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice, caso haja.
+% ---
+%\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+\include{tex/capa}
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\include{tex/pre-textual}
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+\include{tex/cap1}
+
+%\include{tex/cap2}
+
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliographystyle{babunsrt}
+\bibliography{tex/references}
+
+\include{tex/pos-textual}
+
+\end{document}

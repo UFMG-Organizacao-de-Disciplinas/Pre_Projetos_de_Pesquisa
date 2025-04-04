@@ -1,0 +1,46 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Arantes 2001]{2001Alisson}
+\abntrefinfo{Arantes}{ARANTES}{2001}
+{ARANTES, A.~R.
+\emph{Web View: Uma Ferramenta para Construção de Visões de Fontes de Dados da Web}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal de Minas Gerais, jul. 2001.
+Dispon{\'\i}vel em: \url{http://hdl.handle.net/1843/BUBD-9BQK6L}. Acesso em: 30/05/2024.}
+
+\bibitem[CARVALHO 2009]{2009Moises}
+\abntrefinfo{CARVALHO}{CARVALHO}{2009}
+{CARVALHO, M. G.~D.
+\emph{EVOLUTIONARY APPROACHES TO DATA INTEGRATION RELATED PROBLEMS}.
+Tese (Doutorado) --- Universidade Federal de Minas Gerais, out. 2009.}
+
+\bibitem[Correa 2008]{2008Marcelo}
+\abntrefinfo{Correa}{CORREA}{2008}
+{CORREA, M.~D.
+\emph{Web2DB - Uma Ferramenta para Construção de Representações Relacionais de Sítios da Web}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal de Minas Gerais, mar. 2008.}
+
+\bibitem[Fortes 2022]{2022Reinaldo}
+\abntrefinfo{Fortes}{FORTES}{2022}
+{FORTES, R.~S.
+\emph{Enhancing the Multi-Objective Recommendation from three new perspectives: data characterization, risk-sensitiveness, and prioritization of the objectives}.
+Tese (Doutorado) --- Universidade Federal de Minas Gerais, maio 2022.}
+
+\bibitem[Silva 2002]{2002Altigran}
+\abntrefinfo{Silva}{SILVA}{2002}
+{SILVA, A.~S. da.
+\emph{Estratégias Baseadas em Exemplos para Extracão de Dados Semi-Estruturados da Web}.
+Tese (Doutorado) --- Universidade Federal de Minas Gerais, jun. 2002.
+Dispon{\'\i}vel em: \url{http://hdl.handle.net/1843/SLBS-5KKKXX}. Acesso em: 30/05/2024.}
+
+\bibitem[VENEROSO 2019]{2019Joao}
+\abntrefinfo{VENEROSO}{VENEROSO}{2019}
+{VENEROSO, J. M. D.~F.
+\emph{Reconhecimento de Entidades Nomeadas na Web}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal de Minas Gerais, ago. 2019.}
+
+\end{thebibliography}

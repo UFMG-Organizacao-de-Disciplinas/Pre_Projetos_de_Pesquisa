@@ -1,0 +1,255 @@
+% !TEX root = PPP.tex
+
+% - [x]  Procurar template LaTeX
+% - [x]  Estruturar o arquivo
+% - [ ]  Escrever a base mínima do projeto pra não ser desclassificado
+% - artigos pra ler
+    % - [ ]  Baixar 20
+    % - [ ]  Preparar bibref
+
+\input{tex/0.01!-preambulo}
+\input{tex/1.01-1.02!-capa-folha_de_rosto}
+
+\begin{document} % --- Início do documento ---
+\pretextual{} % --- INÍCIO DOS ELEMENTOS PRÉ-TEXTUAIS ---
+
+% \imprimircapa{} % Capa
+
+\textual{} % --- INÍCIO DOS ELEMENTOS TEXTUAIS ---
+
+\chapter{Pré-Projeto de Pesquisa}
+
+\textbf{Laminar}: sistema de mineração, organização e visualização de informação
+
+\begin{comment}
+Estruturando aqui sobre as áreas que eu pretendo tratar:
+
+- Inteligência Artificial
+- Web scraping
+- Ciência de dados
+- Mineração de dados
+- visualização de informação
+- Organização do conhecimento
+
+Na minha pesquisa eu quero conseguir extrair informações de diferentes fontes, organizar essas informações de forma estruturada. Geralmente em formato de tabelas, grafos ou json. Pra isso preciso definir qual é o escopo dos itens que desejo pesquisar? Apenas tabelas? Qualquer tipo de informação? E além da estrutura de visualização de dados que nem a do Notion, posso fazer a IA fazer uma estrutura pra mim?
+
+Devo definir os sites que quero procurar ou a IA define sozinha? Como eu vou definir o escopo? A IA pergunta de volta?
+
+Chega de dúvidas.
+
+O que eu desejo?
+
+Eu quero conseguir fazer tabelas on-demand, ou seja, quero que os seguintes promps sejam respondidos:
+
+- Quais são os diferentes tipos de medicamentos para TDAH?
+- Me informe 20 elementos químicos e 7 de suas propriedades
+- Motores usados em aeromodelismo. categorias: torque, tensão, corrente, peso, preço, dimensões
+- Produtos mais vendidos da Amazon, Mercado Livre e AliExpress. categorias: preço, vendas, avaliação, descrição, link
+- Quais são os preços e produtos vendidos pelo Assaí de Campos dos Goytacazes?
+
+Com esses dados eu vou poder ordenar, filtrar e agrupar os dados.
+
+Quero também que as tabelas dos dados armazenados sejam mantidas com o tempo e classificados.
+
+Seria interessante ter alguns templates de busca por informações. Tipo aquilo que eu já havia pensado pro meu projeto tag. Ou seja, diferentes unidades para tamanho, volume, dinheiro, tempo, cor, etc.
+
+Porém, não sei qual dos pontos eu deveria focar mais. Acho que o mais interessante seria embarcar na onda da IA primeiro, usar ela pra fazer o scraping, depois com a ciência de dados, minerar.
+
+A visualização e a organização ficam em segundo plano. Talvez a organização possa ser usada como base teórica pra IA e ciência de dados. Já a visualização acaba sendo a interface criada, que não é o meu forte.
+
+\end{comment}
+
+\section{Introdução}
+
+% descrever as atividades de pesquisa em Computação que o candidato pretende desenvolver, considerando a abrangência temática do PPGCC e as áreas de concentração em pesquisa de seu corpo docente
+
+% destacar sua relevância científica e técnica
+
+% demonstrar capacidade de contextualização do tema de pesquisa e objetivos, aderência do tema às áreas de pesquisa do PPGCC, objetivos
+
+``Com a crescente popularização e disseminação da Web, um grande volume de dados tornou-se universalmente acessível para um número cada vez maior de usuários'' \cite{2001Alisson}, e com esse grande volume é esperado que parte das informações relevantes sejam difíceis de se encontrar. A proposta de pesquisa visa desenvolver um sistema que possa auxiliar no processo de extração, transformação e carregamento dos dados dispersos na internet, aprimorando a organização e visualização das informações extraídas de diferentes fontes. O sistema proposto se mostra relevante no passo em que visa explorar um campo de estudo que dispõe de profundas complexidades em cada uma de seus processos. Fazendo necessário compreender como lidar com a variabilidade de informações e suas disposições nos diferentes sites, gerir o acesso aos websites e evitar possíveis bloqueios pelo sistema, utilizar estruturas de dados adequadas para armazenar as informações extraídas, e apresentar essas informações de forma clara e objetiva para o usuário.
+
+Este pré-projeto propõe a pesquisa nas áreas da teoria da informação; web scraping; mineração, visualização e ciência de dados; bem como inteligência artificial para processamento de linguagem natural. O objetivo é desenvolver um sistema de mineração de dados guiada por inteligência artificial para organização e visualização de informação, seguido do desenvolvimento de um sistema \textit{web} para a aplicação prática do sistema proposto.
+
+Seus objetivos incluem o desenvolvimento de um sistema para \textit{web scraping}, processamento e visualização de informações estruturadas que permitam ao usuário a manipulação de dados relevantes e previamente esparsos, utilizando de tabelas, filtros, ordenações e outros métodos de manipulação de dados, para fim de encontrar as informações que deseja.
+
+\begin{comment}
+
+## Linha 2 - Engenharia de software e Linguagens de programação
+
+Arquitetura de Software
+Engenharia de Software
+Engenharia Semiótica
+Evolução de Software
+Interação Humano-Computador
+Linguagem de Programação
+Sistemas Colaborativos
+Qualidade e Processos de Software
+
+## Linha 3 - Gerenciamento de Dados e Informações
+
+Banco de Dados
+Bibliotecas Digitais
+Ciência de Dados
+Mineração de Dados
+Recuperação de Informação
+Sistemas de Informação para a Web
+
+## Linha 4 - Robótica, Visão computacional e Processamento gráfico
+
+Visualização de Dados
+
+## Linha 5 - Inteligência artificial
+
+Agentes Inteligentes
+Algoritmos Bioinspirados
+Aplicações de IA
+Aprendizado de Máquina
+Aprendizado Profundo
+Computação evolutiva
+Heurísticas e Metaheurísticas
+Inferência
+Interpretabilidade
+Processamento de Linguagem Natural
+Redes Neurais Artificiais
+
+## Linha 6 - Otimização
+
+Algoritmos e Aplicações
+Heurísticas
+
+\end{comment}
+
+\section{Referencial Teórico}
+
+% demonstrar conhecimento da linha de pesquisa escolhida destacando em que pontos a proposta de projeto poderá contribuir na expansão do estado da arte
+
+Desde o início do século, diversos estudos vêm atacando o problema do grande volume de dados dispersos na internet \cite{2001Alisson, 2002Altigran, 2008Marcelo}. O processo de extração, transformação e carregamento dos dados, conhecido como ETL (\textit{Extract, Transform, Load}), apresenta diversos desafios a ser superados, cada um com uma complexidade própria.
+
+Em todas as etapas desse processo, é necessário considerar a variabilidade de informações e quão relevantes elas são para o que se deseja extrair. Esse conceito, abordado por \citeonline{2022Reinaldo}, aponta como exemplos de critérios de qualidade a acurácia, a novidade e a diversidade dos dados.
+
+Diversos websites disponibilizam informações de forma dinâmica de acordo com uma estrutura baseada em HTML. Essa questão segue em direção dos trabalhos de \citeonline{2002Altigram} e \citeonline{2019Joao}. O primeiro, visa a extração de dados semi-estruturados de forma semi-automática, utilizando de gramáticas tabulares e de exemplos de dados como base para a extração. O segundo, propõe uma forma de compreender os dados dispostos em HTML, pois cita que a forma como os códigos HTML e CSS estão dispostos podem trazer informações quanto aos dados coletados.
+
+Após a coleta dos dados brutos, já no escopo da transformação, ocorre o processamento desses dados. \citeonline{2009Moises} aborda alguns desafios presentes nessa etapa, sendo ele a integração dos dados obtidos de diferentes fontes. Ele utiliza de algoritmos para lidar com a deduplicação dos registros e também para a integração dos dados que foram estruturados em esquemas distintos. Ele comenta que um ponto a ser considerado é o espaço de solução que é considerado vasto.
+
+Todo este processo auxilia na centralização dos dados, e que, como é elaborado por \citeonline{2008Marcelo}.
+
+\begin{citacao}
+  A centralização desses dados é de suma importância, pois reduz esforços na obtenção de dados de grandes repositórios, permitindo que esses esforços sejam dispendidos na análise na tomada de decisão, ou seja, retirar informações dos dados. \cite{2008Marcelo}
+\end{citacao}
+
+Tarefa essa que acaba sendo resolver a questão inicial dos usuários, pois afinal, o desejado é a informação final, não o seu processo de filtragem.
+
+\section{Metodologia} % demonstrar clareza em dar soluções para a linha de pesquisa escolhida
+
+\begin{comment}
+LISTA METODOLOGIAS PARA DESENVOLVER MAIS PROFUNDAMENTE POSTERIORMENTE:
+- organização do conhecimento
+- mineração de dados
+- visualização de informação
+- Inteligência Artificial
+- sistemas similares
+
+LOCAIS PARA PESQUISAR:
+- TCCs UFMG
+- Pesquisas dos professores do PPGCC
+- Artigos
+- Livros das ementas
+\end{comment}
+
+A metodologia desta pesquisa contará com várias etapas, como demonstra o \autoref{tab:cronograma} que apresentam as etapas do estudo ao longo dos semestres. Esta abordagem visa garantir uma progressão consistente e focalizado nos desafios inerentes a cada fase do projeto nesta área de pesquisa. Primeiro, profissionais e acadêmicos da área serão entrevistados para se entender em termos práticos os desafios recorrentemente encontrado, em seguinda será realizada uma revisão bibliográfica para esclarecer aprofundadamente os desafios e soluções apresentadas pelos especialistas.
+
+
+
+\subsection{Desenvolvimento do Sistema de Web Scraping}
+
+O desenvolvimento do sistema de web scraping será dividido em várias fases:
+
+Coleta de Dados: Implementação de scripts para a coleta de dados de diferentes fontes web, utilizando bibliotecas como BeautifulSoup, Scrapy ou Selenium.
+Tratamento e Limpeza dos Dados: Desenvolvimento de algoritmos para a limpeza e normalização dos dados coletados, garantindo a consistência e a qualidade das informações.
+Armazenamento dos Dados: Utilização de estruturas de dados adequadas (como bancos de dados relacionais e NoSQL) para o armazenamento eficiente dos dados coletados.
+\subsection{Aplicação de Técnicas de Mineração de Dados}
+
+Nesta etapa, serão aplicadas técnicas de mineração de dados para extrair informações relevantes dos dados coletados:
+
+Análise de Texto: Utilização de algoritmos de NLP para extrair informações textuais relevantes.
+Clusterização e Classificação: Aplicação de métodos de aprendizado de máquina para agrupar e classificar os dados, facilitando a identificação de padrões e tendências.
+\subsection{Desenvolvimento do Sistema de Visualização de Dados}
+
+Com base nas informações extraídas, será desenvolvido um sistema de visualização de dados que permita ao usuário final interagir de maneira eficiente com os dados:
+
+Desenvolvimento da Interface: Criação de uma interface web intuitiva, utilizando frameworks como React ou Angular.
+Visualizações Interativas: Implementação de gráficos, tabelas e outras visualizações interativas que permitam ao usuário explorar os dados de maneira dinâmica.
+Filtros e Ordenações: Desenvolvimento de funcionalidades que permitam ao usuário filtrar e ordenar os dados conforme suas necessidades.
+\subsection{Integração e Testes}
+
+Após o desenvolvimento dos módulos individuais, será realizada a integração do sistema completo. Esta etapa incluirá:
+
+Testes Unitários e de Integração: Aplicação de testes para garantir que todos os componentes do sistema funcionem corretamente e de forma integrada.
+Testes de Usabilidade: Realização de testes com usuários reais para avaliar a usabilidade e a eficiência da interface de visualização.
+\subsection{Validação e Avaliação do Sistema}
+
+Por fim, o sistema será validado e avaliado com base nos critérios definidos na etapa de requisitos:
+
+Desempenho: Medição do tempo de resposta e eficiência do sistema.
+Qualidade dos Dados: Avaliação da precisão e da relevância das informações extraídas.
+Satisfação do Usuário: Coleta de feedback dos usuários para identificar possíveis melhorias e ajustar o sistema conforme necessário.
+
+\section{Cronograma}
+
+% demonstrar exequibilidade da proposta, indicar possíveis disciplinas a cursar e a organização do tempo durante seu período de vínculo ao curso
+
+O cronograma de atividades é apresentado na \autoref{tab:cronograma} demarca o período temporal em que estima-se que as atividades serão realizadas. Elas estão divididas em três categorias por similaridade da atividade: disciplinas \textbf{(DC)}, estudo da literatura \textbf{(LT)} e atividades gerais (\textbf{GR}). As disciplinas são divididas em quatro categorias, cada uma com um número sugerido de disciplinas a serem cursadas, sendo elas: núcleo comum (2), interesse do aluno (3), demais áreas (5) e tópicos especiais (sem quantidade sugerida). No cronograma, as disciplinas estão agrupadas por blocos de similaridade, sendo seguidas pelo respectivo estudo da literatura e por fim as atividades gerais.
+
+\begin{CenteredTable} \caption{Cronograma de atividades} \label{tab:cronograma}
+  \begin{tabular}{| l | c c c c |}
+    \hline
+    \multicolumn{1}{|c|}{\multirow{2}{*}{Atividade}}            &
+    \multicolumn{4}{c|}{Semestres}
+    \\
+    \multicolumn{1}{|c|}{}                                      &
+    \multicolumn{1}{c|}{1}                                      &
+    \multicolumn{1}{c|}{2}                                      &
+    \multicolumn{1}{c|}{3}                                      &
+    \multicolumn{1}{c|}{4}                                                                                      \\
+    \hline
+
+    \textbf{DC}: Teoria da Informação                           & \cellDisc &           &           &           \\
+    \textbf{DC}: Recuperação de Informação                      &           & \cellDisc &           &           \\
+    \textbf{LT}: Visualização de informação                     & \cellLite & \cellLite &           &           \\
+    % \textbf{DC}: Recuperação de Informação – Máquinas de Busca&           &           & \cellDisc &           \\
+
+    \textbf{DC}: Mineração de Dados                             &           & \cellDisc &           &           \\
+    \textbf{DC}: Visualização de Dados                          &           &           & \cellDisc &           \\
+    \textbf{DC}: Processamento de Dados Massivos em Nuvem       &           &           & \cellDisc &           \\
+    \textbf{DC}: Aprend. Profundo p/ Proc. de Linguagem Natural &           &           & \cellDisc &           \\
+    \textbf{LT}: Mineração de dados                             &           & \cellLite & \cellLite &           \\
+
+
+    \textbf{DC}: Inteligência Artificial                        & \cellDisc &           &           &           \\
+    \textbf{DC}: Tóp. em Inteligência Artificial                &           &           &           & \cellDisc \\
+    \textbf{LT}: Inteligência Artificial                        & \cellLite &           &           & \cellLite \\
+
+    \textbf{DC}: Bancos de Dados                                & \cellDisc &           &           &           \\
+    % \textbf{DC}: Bancos de Dados Distribuídos                 &           & \cellDisc &           &           \\
+    \textbf{DC}: Tóp. em Bancos de Dados                        &           & \cellDisc &           &           \\
+    \textbf{DC}: Projeto e Análise de Algoritmos*               &           & \cellDisc &           &           \\
+    \textbf{DC}: Programação Paralela                           &           &           & \cellDisc &           \\
+    \textbf{DC}: Fund. Teór. da Comp.                           &           &           &           & \cellDisc \\
+    \textbf{LT}: Sistemas similares                             & \cellLite & \cellLite &           &           \\
+
+    \textbf{DC}: Teoria dos Grafos                              & \cellDisc &           &           &           \\
+    \textbf{LT}: Organização do conhecimento                    &           &           & \cellLite &           \\
+    \textbf{DC}: Tarefas ou estudos especiais                   &           &           & \cellDisc &           \\
+    \textbf{GR}: Desenvolvimento do sistema                     &           & \cellMisc & \cellMisc & \cellMisc \\
+    \textbf{GR}: Escrita da dissertação                         &           &           & \cellMisc & \cellMisc \\
+    \hline
+  \end{tabular}
+\end{CenteredTable}
+
+\postextual{} % --- INÍCIO DOS ELEMENTOS PÓS-TEXTUAIS ---
+
+% \section{Referências}
+\include{tex/3.01!-referencias}
+
+\end{document}
