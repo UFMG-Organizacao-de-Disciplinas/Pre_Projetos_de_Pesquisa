@@ -113,3 +113,21 @@ nah
 \section{2015Rodrigo - MODELO DE MISTURA DE PROCESSOS PONTUAIS ESTOCÁSTICOS PARA TEMPOS ENTRE EVENTOS DE SERVIÇOS NA WEB} % 5/10: tem teorias e conceitos que posso usar
 
 Verossimilhança entre coisas.
+
+## Artigos
+
+### Estratégias Baseadas em Exemplos para Extração de Dados Semi-Estruturados da Web - Altigran Soares da Silva
+
+Ferramenta semi-automática para mineração de dados na web buscando variações típicas de objetos semi-estruturados; tabelas aninhadas
+
+DEByE
+
+### WebView: Uma Ferramenta para Construção de Visões de Fontes de Dados Web
+
+Grande quantidade de dados, visão que desconsidera estrutura, coleta integração e atualização de dados da web.
+
+> Com relação ao aspecto da integração, essas visões facilitam o processo de formulação de consultas que envolvam diversas fontes de dados. Isso torna desnecessária a navegaçao exaustiva por várias páginas de um ou mais sites para que determinadas consultas sejam satisfeitas, o que decorre do fato de que elas podem integrar diversas fontes de dados distintas.
+
+Gerência de dados da WEb
+
+### Web2DB - Uma Ferramenta para Construção de Representações Relacionais de Sítios da Web - Marcelo Dias Correa
