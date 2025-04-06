@@ -1,0 +1,192 @@
+\documentclass[12pt]{article}
+% \usepackage{graphicx} % Required for inserting images
+% \usepackage[dvipsnames,table]{xcolor}
+% \usepackage{enumitem}
+% \usepackage{multirow}
+
+% \usepackage[brazilian,hyperpageref]{backref}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{mathtools, mathptmx}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[table]{xcolor}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{bussproofs}
+\usepackage[ddmmyyyy]{datetime}
+% \usepackage[numbib]{tocbibind}
+\usepackage{ulem}
+\usepackage{enumitem}
+\usepackage{multirow,multicol}
+
+
+\newcommand{\comment}[1]{\textcolor{purple}{(#1)}}
+\newcommand{\hash}{\textit{hash}}
+\newcommand{\nref}{\comment{achar referência}}
+
+\title{Uma biblioteca para síntese automática de operações especializadas em funções de \hash\ usando \textit{value profiling}}
+\author{João Vitor Fr\"ohlich}
+\date{\today}
+
+% Enxugar a introdução, explicitando a motivação
+% Jogar toda a explicação de hashing para a seção 2, e daí vai jogando referências para os conteúdos
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+
+% Introdução (demonstrar capacidade de contextualização
+% do tema de pesquisa e objetivos, aderência do tema
+% às áreas de pesquisa do PPGCC, objetivos)
+
+% Contextualizar o tema de pesquisa e os objetivos. Falar sobre como funções de hash são importantes, sobre como essas funções podem ser especializadas e bla bla bla
+% Aderência do tema às áreas de pesquisa do PPGCC. Falar sobre como isso está linkado à área de compiladores
+
+Funções de \hash\ são muito importantes para a computação. Elas estão presentes em diversos sistemas computacionais, como por exemplo sistemas operacionais, sistemas de arquivos, servidores DNS, redes sociais e criptografia. Em especial, funções de \hash\ não criptográficas são muito utilizadas por sua capacidade de buscar rapidamente por uma informação, independente da quantidade, e por sua escalabilidade conforme o crescimento da aplicação onde ela é utilizada.
+
+Contudo, a busca por um elemento pode ser piorada dependendo da forma como a função de \hash\ é implementada. Isto porque estas funções trabalham a partir do mapeamento de um valor de entrada, representado por meio de uma sequência de \textit{bytes} de tamanho arbitrário, para um valor de saída, de tamanho fixo. Num mundo ideal, todos os valores seriam mapeados para um valor diferente mas, como a entrada pode ser infinita e a saída é de tamanho fixo, isto nem sempre acontece. Se uma função mapeia muitos valores de entrada para um mesmo valor de saída, então sua principal qualidade, a velocidade pela busca de informação, é perdida, pois será necessária uma busca sequencial pela informação.
+
+Em alguns casos, os valores de entrada possuem padrões que podem ser explorados pelas funções de \hash, de forma que permita sua otimização. Por exemplo, um CPF é representado no formato XXX.XXX.XXX-XX, onde X é um número inteiro de 0 a 9. Como '.' e '-' estão presentes em todos os CPFs, eles podem ser ignorados e apenas os 11 dígitos X serem considerados pela função. Dessa forma, a velocidade da função pode melhorar e o número de colisões diminuir.
+
+Nesse sentido, é possível especializar essas funções através de um compilador por meio da técnica de \textit{value profiling}. Um compilador é uma aplicação que traduz um código escrito em uma linguagem qualquer para instruções a serem executadas pelo computador, visando otimizar estas instruções. Já a técnica de \textit{value profiling} consiste em verificar os valores que são modificados durante a execução do programa, o que permite encontrar padrões nos valores que são dados como entrada para o programa. O compilador seria capaz de analisar os padrões, identificar as funções de \hash\ do programa original e produzir funções de \hash\ especializadas.
+
+Assim, o objetivo dese trabalho consiste em implementar e testar uma ferramenta capaz de sintetizar automaticamente funções de \hash\ baseado no conhecimento sobre as chaves \hash\ dessa função, afim de otimizar essa função para seu contexto na aplicação, seja aumentando a sua velocidade ou reduzindo o número de colisões.
+
+\section{Referencial Teórico}
+
+% demonstrar conhecimento da linha de
+% pesquisa escolhida destacando em que pontos a
+% proposta de projeto poderá contribuir na expansão do
+% estado da arte
+
+% Falar sobre o que é hash, hash criptográfico (FHC) e não criptográfico (FHNC), medidas de desempenho de FHNC,
+% especialização de funções de hash, funções populares, geração de código, gramáticas.
+
+Uma função de \hash\ é uma função que transforma um valor de entrada de tamanho arbitrário em um valor de \hash\ de tamanho fixo.
+A entrada de uma função é chamada chave \hash, enquanto que o resultado da função é chamado valor de \hash.
+Estas funções podem ser utilizadas, por exemplo, para otimizar consultas em tabelas e em bancos de dados e funções de criptografia.
+
+As funções de \hash\ podem ser criptográficas (FHC) ou não criptográficas (FHNC), onde uma FHC tem como principal característica a dificuldade computacional de reverter o processo de \textit{hashing}, enquanto uma FHNC tem como característica o baixo número de colisões. O foco deste trabalho serão as FHNCs.
+
+Segundo \cite{estebanez2014performance}, existem 4 critérios principais para medir a qualidade de uma FHNC, sendo eles: a resistência a colisões, que se refere à probabilidade de existirem duas chaves \hash\ que produzam o mesmo valor de \hash; a distribuição de resultados, que mede o quão próximo os valores de \hash\ da função seguem uma distribuição uniforme; o efeito avalanche, que se refere à capacidade de produzir uma grande mudança no valor de \hash\ a partir de uma pequena modificação em uma chave \hash; e a velocidade, que considera o quão rápido a função executa. A ideia de otimizar uma função de \hash, portanto, tem como foco melhorar um ou mais destes aspectos, a depender do contexto da aplicação.
+
+Uma forma de se melhorar o desempenho de uma função de \hash\ consiste em especializar uma função para um dado conjunto de dados. Essa especialização poderia ser realizada uma vez que o conjunto de dados de entrada fosse analisado e alguns padrões fossem encontrados. Em \cite{dobai2017evolutionary}, por exemplo, uma função de \hash\ especializada para um conjunto de endereços IP é elaborada utilizando algoritmos evolutivos. Já em \cite{grochol2016evolutionary}, um método é proposto e analisado utilizando \textit{linear genetic programming} para especializar funções de \hash\ visando o aumento na velocidade destas funções.
+
+Na literatura são encontradas diversas funções de \hash\ não criptográficas, cuja qualidade depende da aplicação onde esta função é utilizada. Algumas destas funções são: \textbf{FNV}, \textbf{lookup3}, \textbf{SuperFastHash}, \textbf{MurmurHash2}, \textbf{DJBX33A}, \textbf{BuzHash}, \textbf{DEK}, \textbf{BKDR} e \textbf{APartow}. Como a complexidade de desenvolver uma nova FHNC é muito alta, alguns trabalhos focam na evolução de funções já existentes para gerar novas FHNC. É o caso de trabalhos como \cite{berarducci2004gevosh}, que produziu 2 FHNCs genéricas usando \textit{grammatical evolution}, \cite{estebanez2014automatic}, que propôs e analisou um método de geração de FHNCs genéricas utilizando programação genética, e \cite{saez2019evolutionary}, que propôs e analisou um método de especialização de FHNCs baseado no conhecimento do conjunto de chaves, utilizando \textit{linear genetic programming}.
+
+O diferencial deste trabalho consiste no desenvolvimento de uma biblioteca de otimização para compiladores, capaz de sintetizar automaticamente uma FHNC especializada se baseando no conhecimento do valor das chaves de \hash, sendo que esse conhecimento é adquirido através de \textit{value profiling}.
+Segundo \cite{calder1997value}, a técnica de \textit{value profiling} consiste em identificar variáveis que sofrem poucas mudanças durante a execução de programas. Um dos possíveis usos dessa técnica envolve otimizar o código gerado no processo de compilação a partir da especialização do código para os valores encontrados.
+
+
+% Alguns trabalhos:
+% \begin{itemize}
+%     \item \cite{estebanez2014performance}: estabelece critérios para análise de funções de \hash\ não criptográficas e faz a análise de algumas funções.\ Acho que os critérios poderiam servir de base nesse trabalho e os resultados das análises poderiam ser usados como base de comparação com as otimizações apresentadas.
+%     \item \cite{saez2019evolutionary}: propõe uma programação genética para produzir funções de \hash\ especializadas para um conjunto de dados.
+%     \item \cite{estebanez2014automatic}: propõe uma programação genética para produzir uma função de \hash\ genérica para uma aplicação
+%     \item \cite{berarducci2004gevosh}: utiliza um método de \textit{Grammatical Evolution} para gerar novas funções de \hash\ genéricas.
+%     \item \cite{grochol2016evolutionary}: Propõe um método baseado em \textit{linear genetic programming} capaz de especializar funções de hash para aumentar a velocidade destas funções
+%     \item \cite{dobai2017evolutionary}: Propõe uma função de \hash\ usando algoritmos evolutivos especializada para um conjunto de endereços IP
+%     Podemos usar o Knuth da massa também
+% \end{itemize}
+
+\section{Metodologia}
+
+% Metodologia (demonstrar clareza em dar soluções para a
+% linha de pesquisa escolhida)
+
+A proposta para a realização deste trabalho consiste em implementar e modificar as ferramentas destacadas em negrito a seguir, para realizar o seguinte procedimento.
+
+Inicialmente, a partir de uma aplicação $P$, o \textbf{compilador} geraria uma aplicação $P'$, que registraria os valores de chaves \hash\ através de \textit{value profiling}.
+
+A partir de uma análise desses valores, um \textbf{analisador de código} agruparia as chaves em uma estrutura a ser definida. Esta estrutura precisa ser capaz de agrupar as chaves de um formato específico a um formato mais geral.
+
+Então, um \textbf{sintetizador de código}, focado em especializar funções de \hash, produziria versões das funções de \hash\ contidas originalmente na aplicação $P$, com foco em otimizar algum dos aspectos descritos em \cite{estebanez2014performance}.
+
+Por fim, o \textbf{compilador} modifica $P$ com as funções de \hash\ geradas no passo anterior, produzindo uma aplicação otimizada $P''$.
+
+Para permitir a síntese, será necessário criar também um catálogo de especializações de funções de \hash\ comuns. Alguns exemplos de especialização, baseados em alguns padrões de chaves \hash\ são: substrings comuns a todas as chaves \hash; dado uma codificação das chaves \hash\ para um valor inteiro, a distribuição dessas chaves se concentra majoritariamente em um intervalo pequeno; e se todas as chaves são constituídas por sequências de dígitos ASCII.
+
+\section{Cronograma}
+
+% demonstrar exequibilidade da proposta,
+
+Para cumprir os objetivos propostos, o trabalho será dividido em X etapas, cada uma focando em um tema distinto, sendo estas etapas e temas:
+
+\begin{enumerate}[label=(E\arabic*)]
+    \item Teoria e implementação de funções de \hash
+    \item Análise de padrões em conjuntos de dados distintos
+    \item Catalogação de funções de \hash\ especializadas
+    \item Implementação da biblioteca de geração de código
+    \item Escrita da dissertação
+\end{enumerate}
+
+Assim, supondo um prazo de um semestre para a execução de cada etapa, prazo este que pode ser maior ou menor, o cronograma proposto para a execução do projeto de mestrado é o seguinte:
+
+
+\vspace{0.5cm}
+{
+    \noindent \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      \multirow{2}{*}{\textbf{\small{Etapas}}} & \multicolumn{2}{|c|}{\textbf{\small{Primeiro Ano}}} &
+      \multicolumn{2}{|c|}{\textbf{\small{Segundo Ano}}} \\
+      \cline{2-5}
+      & \textbf{1º Semestre} & \textbf{2º Semestre} & \textbf{1º Semestre} & \textbf{2º Semestre}  \\
+      \hline
+      \textbf{\small{E1}}  & \cellcolor{gray} &  &  &   \\
+      \hline
+      \textbf{\small{E2}}  &   & \cellcolor{gray} & &  \\
+      \hline
+      \textbf{\small{E3}}  &   &  & \cellcolor{gray} & \cellcolor{gray} \\
+      \hline
+      \textbf{\small{E4}}  &   &   &  \cellcolor{gray} & \cellcolor{gray} \\
+      \hline
+      \textbf{\small{E5}}  &  \cellcolor{gray} & \cellcolor{gray}   & \cellcolor{gray} &  \cellcolor{gray}  \\
+      \hline
+    \end{tabular}
+}
+
+\vspace{0.5cm}
+
+Além disso, para adquirir o conhecimento necessário para a execução desta proposta de mestrado, e visando a oferta recente de disciplinas do programa, pensa-se em cursar as seguintes disciplinas: Análise Estática de Programas, Ciber-segurança e Métodos Formais. Além disso, será cursada a disciplina obrigatória e Projeto e Análise de Algoritmos e, por fim, a disciplina de Programação Competitiva, que mesmo não tendo muita relação direta com o conteúdo da dissertação, acredita-se que ajudará a expandir o conhecimento sobre algoritmos avançados da computação e auxiliará em entrevistas de emprego.
+
+
+% \begin{enumerate}[label=(D\arabic*)]
+%     \item Projeto e Análise de Algoritmos; por ser uma disciplina obrigatória
+%     \item Análise Estática de Programas; por tratar de sei lá \comment{TODO}
+%     \item Cibersegurança; por tratar de funções \hash
+%     \item Métodos formais; por tratar de conteúdos relacionados a linguagem (?????)
+%     \item Programação Competitiva; mesmo não tendo relação direta com o conteúdo da dissertação, acredita-se que ajudará em entrevistas de emprego futuramente.
+% \end{enumerate}
+
+Não será apresentado um cronograma para a realização das disciplinas, pois isto depende da oferta de disciplinas em cada semestre. Além disso, a lista de disciplinas pode ser alterada durante o período do mestrado.
+
+
+% organização do tempo durante seu período de vínculo ao curso????
+
+% A ideia inicial é manter dedicação exclusiva ao mestrado, trabalhando entre 30 e 40 horas na pesquisa, dedicando o tempo necessário para as disciplinas e mantendo uma vida saudável no tempo restante.
+    
+% Cronograma (demonstrar exequibilidade da proposta,
+% indicar possíveis disciplinas a cursar e a organização
+% do tempo durante seu período de vínculo ao curso)
+
+
+
+% A hash function is a function that maps an input (e.g. an ASCII string) into an unsigned integer number. The
+% performance of such functions can be measured in two metrics: speed and collision rate. The speed of a hash
+% function is the average time it takes to run based on the size of the input string. The collision rate is the
+% number of pair of input strings that are mapped to the same number. The desired hash function is one with
+% high speed and low collision rate.
+
+% In fact, a hash function isn't perfect for any case. Some are very fast, but have a lot of collision rate, while
+% others have almost no collision at all, but are very slow. The right hash function will depend on the needs
+% of 
+
+\bibliographystyle{acm}
+\bibliography{references.bib}
+
+\end{document}
