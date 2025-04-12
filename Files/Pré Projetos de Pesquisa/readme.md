@@ -4,6 +4,7 @@
 | ---- | :------- | ---------------------------------- | ---------: | --------: | ------------------------- | --------------------------- | ------------------------------ |
 | 2024 | 2        | Gabriel Reis Gama Barbosa          |      99,00 |     39,60 | [PDF][PDF_2024_2_Gabriel] |                             |                                |
 | 2024 | 1        | João Vitor Fröhlich                |      95,67 |     38,27 | [PDF][PDF_2024_1_JoãoFro] | [LaTeX][Tex_2024_1_JoãoFro] |                                |
+| 2024 | 1        | Camilo Santana Melgaço             |      94,68 |     37,87 | [PDF][PDF_2024_1_CamiloM] |                             |                                |
 | 2024 | 2        | Lucca Carvalho Augusto             |      93,68 |     37,47 | [PDF][PDF_2024_2_LuccaCa] | [LaTeX][Tex_2024_2_LuccaCa] | [Overleaf][OvL_2024_2_LuccaCa] |
 | 2023 | 2        | Aylton Bernardino de Almeida Junio |      91,50 |     36,60 | [PDF][PDF_2023_2_AyltonB] | [LaTeX][Tex_2023_2_AyltonB] |                                |
 | 2024 | 2        | João Vítor Fernandes Dias          |      75,00 |     30,00 | [PDF][PDF_2024_2_JoãoFer] | [LaTeX][Tex_2024_2_JoãoFer] |                                |
@@ -14,6 +15,8 @@
 
 [PDF_2024_1_JoãoFro]: <Files\Pré Projetos de Pesquisa\2024_1 - Joao Vitor Frohlich\main.pdf>
 [Tex_2024_1_JoãoFro]: <Files\Pré Projetos de Pesquisa\2024_1 - Joao Vitor Frohlich\main.tex>
+
+[PDF_2024_1_CamiloM]: <Files\Pré Projetos de Pesquisa\2024_1 - Camilo Santana Melgaço\2024_1 - Camilo Santana Melgaço.pdf>
 
 [PDF_2024_2_LuccaCa]: <Files\Pré Projetos de Pesquisa\2024_2 - Lucca Carvalho Augusto\Projeto_Mestrado.pdf>
 [Tex_2024_2_LuccaCa]: <Files\Pré Projetos de Pesquisa\2024_2 - Lucca Carvalho Augusto\Projeto Mestrado (Clean)\sbc-template.tex>
