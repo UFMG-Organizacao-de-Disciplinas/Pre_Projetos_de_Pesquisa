@@ -44,7 +44,7 @@
 
 <!--  -->
 
-[PDF_2024_2_Isabela]: <Files/Pré Projetos de Pesquisa/2024_2 - Isabela Carolina Ribeiro Santos/2024_2 - Isabela Santos.pdf>
+[PDF_2024_2_Isabela]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Isabela%20Carolina%20Ribeiro%20Santos/2024_2_Isabela.pdf
 
 <!-- [Tex_2024_2_Isabela]: <> -->
 
