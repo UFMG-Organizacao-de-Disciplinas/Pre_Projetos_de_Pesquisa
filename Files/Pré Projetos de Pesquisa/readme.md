@@ -15,32 +15,32 @@
 
 <!-- | 2025 | 2        | Amanda Mendes Pinho                |          ? |         ? |                           |                             |                                | -->
 
-[PDF_2024_2_Gabriel]: <Files/Pré Projetos de Pesquisa/2024_2 - Gabriel Reis Gama Barbosa/Proposta_MESTRADO.pdf>
+[PDF_2024_2_Gabriel]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Gabriel%20Reis%20Gama%20Barbosa/2024_2_Gabriel.pdf
 
 <!-- [Tex_2024_2_Gabriel]: <> -->
 
-[PDF_2024_1_JoãoFro]: <Files/Pré Projetos de Pesquisa/2024_1 - Joao Vitor Frohlich/main.pdf>
-[Tex_2024_1_JoãoFro]: <Files/Pré Projetos de Pesquisa/2024_1 - Joao Vitor Frohlich/main.tex>
+[PDF_2024_1_JoãoFro]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_1%20-%20Joao%20Vitor%20Frohlich/2024_1-Jo%C3%A3oFro.pdf
+[Tex_2024_1_JoãoFro]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_1%20-%20Joao%20Vitor%20Frohlich/src
 
 <!--  -->
 
-[PDF_2024_1_CamiloM]: <Files/Pré Projetos de Pesquisa/2024_1 - Camilo Santana Melgaço/2024_1 - Camilo Santana Melgaço.pdf>
+[PDF_2024_1_CamiloM]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_1%20-%20Camilo%20Santana%20Melga%C3%A7o/2024_1_CamiloM.pdf
 
 <!--  -->
 
-[PDF_2024_2_LuccaCa]: <Files/Pré Projetos de Pesquisa/2024_2 - Lucca Carvalho Augusto/Projeto_Mestrado.pdf>
-[Tex_2024_2_LuccaCa]: <Files/Pré Projetos de Pesquisa/2024_2 - Lucca Carvalho Augusto/Projeto Mestrado (Clean)/sbc-template.tex>
+[PDF_2024_2_LuccaCa]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Lucca%20Carvalho%20Augusto/2024_2_LuccaCa.pdf
+[Tex_2024_2_LuccaCa]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Lucca%20Carvalho%20Augusto/src
 [OvL_2024_2_LuccaCa]: https://www.overleaf.com/project/67f3d6099d710e83beaae073
 
 <!--  -->
 
-[PDF_2023_2_AyltonB]: <Files/Pré Projetos de Pesquisa/2023_2 - Aylton Bernardino de Almeida Junio/2023_2 - Aylton.pdf>
-[Tex_2023_2_AyltonB]: <Files/Pré Projetos de Pesquisa/2023_2 - Aylton Bernardino de Almeida Junio/src/main.tex>
+[PDF_2023_2_AyltonB]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2023_2%20-%20Aylton%20Bernardino%20de%20Almeida%20Junio/2023_2-AyltonB.pdf
+[Tex_2023_2_AyltonB]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2023_2%20-%20Aylton%20Bernardino%20de%20Almeida%20Junio/src
 
 <!--  -->
 
-[PDF_2024_2_JoãoFer]: <Files/Pré Projetos de Pesquisa/2024_2 - João Vítor Fernandes Dias/Pré-Projeto de Pesquisa - João Vítor Fernandes Dias.pdf>
-[Tex_2024_2_JoãoFer]: <Files/Pré Projetos de Pesquisa/2024_2 - João Vítor Fernandes Dias/PPP.tex>
+[PDF_2024_2_JoãoFer]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Jo%C3%A3o%20V%C3%ADtor%20Fernandes%20Dias/2024_2_Jo%C3%A3oFer.pdf
+[Tex_2024_2_JoãoFer]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Jo%C3%A3o%20V%C3%ADtor%20Fernandes%20Dias/src
 
 <!--  -->
 
@@ -56,20 +56,20 @@
 
 <!--  -->
 
-[PDF_2025_2_DaniBri]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Brito dos Santos/2025_2-DaniBri.pdf>
-[Tex_2025_2_DaniBri]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Brito dos Santos/src>
+[PDF_2025_2_DaniBri]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2025_2%20-%20Daniel%20Brito%20dos%20Santos/2025_2-DaniBr.pdf
+[Tex_2025_2_DaniBri]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2025_2%20-%20Daniel%20Brito%20dos%20Santos/src
 [OvL_2025_2_DaniBri]: https://www.overleaf.com/read/xtcwkmdmbsnx
 
 <!--  -->
 
-[PDF_2025_2_DaniTer]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Terra Gomes/2025.2_DanielTe.pdf>
-[Tex_2025_2_DaniTer]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Terra Gomes/src>
+[PDF_2025_2_DaniTer]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2025_2%20-%20Daniel%20Terra%20Gomes/2025.2_DanielTe.pdf
+[Tex_2025_2_DaniTer]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2025_2%20-%20Daniel%20Terra%20Gomes/src
 [OvL_2025_2_DaniTer]: https://www.overleaf.com/read/kkdcchgqngmj
 
 <!--  -->
 
-[PDF_2025_2_RangelA]: <Files/Pré Projetos de Pesquisa/2025_2 - RangelA Ávila Barroso/2025_2-RangelA.pdf>
-[Tex_2025_2_RangelA]: <Files/Pré Projetos de Pesquisa/2025_2 - RangelA Ávila Barroso/PPP.tex>
+[PDF_2025_2_RangelA]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2025_2%20-%20Rangel%20%C3%81vila%20Barroso/2025_2-Rangel.pdf
+[Tex_2025_2_RangelA]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2025_2%20-%20Rangel%20%C3%81vila%20Barroso/src
 [OvL_2025_2_RangelA]: https://www.overleaf.com/read/nfwhvkgrpynn
 
 <!--  -->
