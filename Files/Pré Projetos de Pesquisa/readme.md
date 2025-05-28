@@ -1,6 +1,6 @@
 # Notas dos Pré Projetos de Pesquisa
 
-| Ano  | Semestre | Nome                               | Nota (100) | Nota (40) | PDF                       | $/LaTeX$                    | Overleaf                       |
+| Ano  | Semestre | Nome                               | Nota (100) | Nota (40) | PDF                       | $\LaTeX$                    | Overleaf                       |
 | ---- | :------- | ---------------------------------- | ---------: | --------: | ------------------------- | --------------------------- | ------------------------------ |
 | 2024 | 2        | Gabriel Reis Gama Barbosa          |      99,00 |     39,60 | [PDF][PDF_2024_2_Gabriel] |                             |                                |
 | 2024 | 1        | João Vitor Fröhlich                |      95,67 |     38,27 | [PDF][PDF_2024_1_JoãoFro] | [LaTeX][Tex_2024_1_JoãoFro] |                                |
