@@ -9,9 +9,11 @@
 | 2023 | 2        | Aylton Bernardino de Almeida Junio |      91,50 |     36,60 | [PDF][PDF_2023_2_AyltonB] | [LaTeX][Tex_2023_2_AyltonB] |                                |
 | 2024 | 2        | João Vítor Fernandes Dias          |      75,00 |     30,00 | [PDF][PDF_2024_2_JoãoFer] | [LaTeX][Tex_2024_2_JoãoFer] |                                |
 | 2024 | 2        | Isabela Carolina Ribeiro Santos    |      70,68 |     28,27 | [PDF][PDF_2024_2_Isabela] |                             |                                |
-| 2025 | 2        | Daniel Terra Gomes                 |          ? |         ? |                           |                             | [Overleaf][OvL_2025_2_Daniel]  |
-| 2025 | 2        | Amanda Mendes Pinho                |          ? |         ? |                           |                             | [Overleaf][OvL_2025_2_Amanda]  |
-| 2025 | 2        | Rangel Ávila Barroso               |          ? |         ? |                           |                             | [Overleaf][OvL_2025_2_Rangel]  |
+| 2025 | 2        | Daniel Brito dos Santos            |          ? |         ? | [PDF][PDF_2025_2_DaniBri] | [LaTeX][Tex_2025_2_DaniBri] | [Overleaf][OvL_2025_2_DaniBri] |
+| 2025 | 2        | Daniel Terra Gomes                 |          ? |         ? | [PDF][PDF_2025_2_DaniTer] | [LaTeX][Tex_2025_2_DaniTer] | [Overleaf][OvL_2025_2_DaniTer] |
+| 2025 | 2        | Rangel Ávila Barroso               |          ? |         ? | [PDF][PDF_2025_2_RangelA] | [LaTeX][Tex_2025_2_RangelA] | [Overleaf][OvL_2025_2_RangelA] |
+
+<!-- | 2025 | 2        | Amanda Mendes Pinho                |          ? |         ? |                           |                             |                                | -->
 
 [PDF_2024_2_Gabriel]: <Files/Pré Projetos de Pesquisa/2024_2 - Gabriel Reis Gama Barbosa/Proposta_MESTRADO.pdf>
 
@@ -19,19 +21,55 @@
 
 [PDF_2024_1_JoãoFro]: <Files/Pré Projetos de Pesquisa/2024_1 - Joao Vitor Frohlich/main.pdf>
 [Tex_2024_1_JoãoFro]: <Files/Pré Projetos de Pesquisa/2024_1 - Joao Vitor Frohlich/main.tex>
+
+<!--  -->
+
 [PDF_2024_1_CamiloM]: <Files/Pré Projetos de Pesquisa/2024_1 - Camilo Santana Melgaço/2024_1 - Camilo Santana Melgaço.pdf>
+
+<!--  -->
+
 [PDF_2024_2_LuccaCa]: <Files/Pré Projetos de Pesquisa/2024_2 - Lucca Carvalho Augusto/Projeto_Mestrado.pdf>
 [Tex_2024_2_LuccaCa]: <Files/Pré Projetos de Pesquisa/2024_2 - Lucca Carvalho Augusto/Projeto Mestrado (Clean)/sbc-template.tex>
 [OvL_2024_2_LuccaCa]: https://www.overleaf.com/project/67f3d6099d710e83beaae073
+
+<!--  -->
+
 [PDF_2023_2_AyltonB]: <Files/Pré Projetos de Pesquisa/2023_2 - Aylton Bernardino de Almeida Junio/2023_2 - Aylton.pdf>
 [Tex_2023_2_AyltonB]: <Files/Pré Projetos de Pesquisa/2023_2 - Aylton Bernardino de Almeida Junio/src/main.tex>
+
+<!--  -->
+
 [PDF_2024_2_JoãoFer]: <Files/Pré Projetos de Pesquisa/2024_2 - João Vítor Fernandes Dias/Pré-Projeto de Pesquisa - João Vítor Fernandes Dias.pdf>
 [Tex_2024_2_JoãoFer]: <Files/Pré Projetos de Pesquisa/2024_2 - João Vítor Fernandes Dias/PPP.tex>
+
+<!--  -->
+
 [PDF_2024_2_Isabela]: <Files/Pré Projetos de Pesquisa/2024_2 - Isabela Carolina Ribeiro Santos/2024_2 - Isabela Santos.pdf>
 
 <!-- [Tex_2024_2_Isabela]: <> -->
 
-[OvL_2025_2_Daniel]: https://www.overleaf.com/read/kkdcchgqngmj
+<!--  -->
 
-[OvL_2025_2_Amanda]: <>
-[OvL_2025_2_Rangel]: https://www.overleaf.com/read/nfwhvkgrpynn
+<!-- [PDF_2025_2_AmandaM]: <> -->
+<!-- [Tex_2025_2_AmandaM]: <> -->
+<!-- [OvL_2025_2_AmandaM]: <> -->
+
+<!--  -->
+
+[PDF_2025_2_DaniBri]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Brito dos Santos/2025_2-DaniBri.pdf>
+[Tex_2025_2_DaniBri]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Brito dos Santos/src>
+[OvL_2025_2_DaniBri]: https://www.overleaf.com/read/xtcwkmdmbsnx
+
+<!--  -->
+
+[PDF_2025_2_DaniTer]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Terra Gomes/2025.2_DanielTe.pdf>
+[Tex_2025_2_DaniTer]: <Files/Pré Projetos de Pesquisa/2025_2 - Daniel Terra Gomes/src>
+[OvL_2025_2_DaniTer]: https://www.overleaf.com/read/kkdcchgqngmj
+
+<!--  -->
+
+[PDF_2025_2_RangelA]: <Files/Pré Projetos de Pesquisa/2025_2 - RangelA Ávila Barroso/2025_2-RangelA.pdf>
+[Tex_2025_2_RangelA]: <Files/Pré Projetos de Pesquisa/2025_2 - RangelA Ávila Barroso/PPP.tex>
+[OvL_2025_2_RangelA]: https://www.overleaf.com/read/nfwhvkgrpynn
+
+<!--  -->

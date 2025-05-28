@@ -1,0 +1,24 @@
+\ProvidesPackage{ABNT6023-2013}
+% ----
+% Compatibilização com a ABNT NBR 6023:2018
+\makeatletter
+\@ifpackageloaded{url}{%
+\addtociteoptionlist{abnt-url-package=url}
+\def\UrlLeft{}
+\def\UrlRight{}
+\urlstyle{same}}
+\makeatother
+\makeatletter
+% ----
+% Compatibilização com a ABNT NBR 10520:2023
+% Tornar as expressões latinas em itálico
+%\renewcommand{\Idemname}{\textit{Id.}}
+\renewcommand{\apudname}{\textit{apud}}
+\renewcommand{\Idemname}{\textit{Id.}}
+\renewcommand{\Ibidemname}{\textit{Ibid.}}
+\renewcommand{\opcitname}{\textit{op.\ cit.}}
+\renewcommand{\passimname}{\textit{passim}}
+\renewcommand{\loccitname}{\textit{loc.\ cit.}}
+\renewcommand{\cfcitename}{\textit{Cf.}}
+\renewcommand{\etseqname}{\textit{et seq.}}
+\makeatother

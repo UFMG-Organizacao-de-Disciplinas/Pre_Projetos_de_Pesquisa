@@ -1,0 +1,110 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times} % Uses Times New Roman like font
+\usepackage[english]{babel}
+\usepackage{setspace}
+\singlespacing
+\usepackage[margin=1in]{geometry} % 1-inch margins; consider 0.9in or 0.85in if desperately needed and allowed
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[
+    backend=biber,
+    style=authoryear-comp, % Compact author-year citations
+    sorting=nyt, % Sort by name, year, title
+    citestyle=authoryear,
+    doi=true, % Print DOIs
+    eprint=true, % Print eprints
+    url=true % Process URLs (for hyperref)
+]{biblatex}
+\addbibresource{references.bib} % Your bibliography file
+
+\usepackage{hyperref} % For clickable links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=MidnightBlue,   % for internal links
+    filecolor=Gray,           % for file links
+    urlcolor=RoyalBlue,       % for external URLs (used by hyperref for titles linked via URL field)
+    citecolor=OliveGreen      % for citations
+}
+
+% --- BIBLIOGRAPHY FORMATTING TO SAVE SPACE ---
+\DeclareFieldFormat{url}{} 
+\DeclareFieldFormat{urldate}{}
+% \AtBeginBibliography{\footnotesize} % Reduce font size for the entire bibliography
+% --- END OF BIBLIOGRAPHY FORMATTING ---
+
+\title{
+    \textbf{Reasoning and Knowledge Representation in Small Language Models: An Interpretability Analysis on the ARC-AGI Benchmark}
+}
+\author{Daniel Brito dos Santos}
+\date{May 12, 2025} 
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+The rapid advancement of Large Language Models (LLMs) has revolutionized numerous fields, yet their immense scale often obscures the fundamental mechanisms underlying their capabilities \parencite{templeton2024scaling}. Currently, small language models (SLM) have emerged as powerful, efficient, and accessible alternatives, offering a unique lens to study the core aspects of AI \parencite{deepseekai2025deepseekr1incentivizingreasoningcapability, qwen2025qwen25technicalreport}. This research focuses on SLMs, specifically recent models around 1.5 billion parameters \parencite{qwen3_blog}, to investigate their emergent reasoning and representation of internal knowledge.
+
+Understanding the internals of the language model is essential for robust, reliable, and trustworthy AI. Interpretability research aims to demystify these "black boxes," explaining \textit{how} and \textit{why} models produce specific results \parencite{doshivelez2017rigorous, amodei2025urgency}. Compared to their larger counterparts, SLMs provide a more accessible setting for in-depth interpretability research. Their relative simplicity enables more precise analysis of learned representations and the computational 'circuits' underlying model behavior \parencite{elhage2021mathematical, olah2020zoom, nanda2023progress, lindsey2025biology}.
+
+The Abstraction and Reasoning Corpus (ARC-AGI) benchmark \parencite{chollet2019measure, arc2024} is distinctly advantageous for this pursuit. ARC-AGI tasks demand genuine reasoning and abstraction, probing human-like fluid intelligence beyond learned textual patterns. Its well-defined, visual tasks are ideal for studying how models build and manipulate abstract concepts. Investigating SLM behavior on ARC-AGI can yield significant insights into reasoning primitives, where even advanced LLMs struggle \parencite{xu2023comprehensive, ichter2023can}.
+
+This research intersects efficient SLMs, AI interpretability, and robust reasoning via ARC-AGI. Understanding how SLMs tackle ARC-AGI can help develop more capable, explainable AI, fostering safer deployments.
+
+\begin{itemize}
+    \item \textbf{General Objective:} To investigate and causally explain specific reasoning failure modes in an SLM (e.g., a Qwen model of ~1.5B parameters) on curated ARC-AGI problems, focusing on the interplay between input representation and internal mechanisms.
+    \item \textbf{Specific Objectives:}
+    \begin{enumerate}
+        \item Develop and evaluate effective textual/symbolic representations for curated ARC-AGI tasks, enabling SLM processing, and analyze their impact on model behavior.
+        \item Evaluate SLM performance on this curated ARC-AGI subset (selected for tractable structure and specific reasoning patterns like symmetry or counting) to identify consistent, interpretable failure modes.
+        \item Conduct targeted, in-depth failure analysis on isolated tasks using causal interpretability techniques (primarily activation patching and interventions) to identify why internal mechanisms break down, potentially starting with CoT analysis.
+        \item Provide robust causal explanations for specific reasoning failures and, where feasible, show how minimal interventions predictably alter model behavior concerning these failures.
+        \item Contribute insights into representational and mechanistic prerequisites for robust abstract reasoning in SLMs, highlighting common pitfalls and their potential understanding or mitigation.
+    \end{enumerate}
+\end{itemize}
+
+\section*{Theoretical Framework}
+
+\subsubsection*{Small Language Models (SLMs)}  
+The growing interest in small, efficient language models such as Phi-2 \parencite{microsoft2023phi2}, the Qwen series \parencite{qwen2025qwen25technicalreport}, and Gemma \parencite{google2024gemma} is driven by the need for lower computational costs, faster inference, and easier deployment. Despite their size, some SLMs exhibit surprising emergent capabilities, including reasoning and in-context learning \parencite{brown2020languagemodelsfewshotlearners}, though generally to a lesser extent than larger models. Their compact architecture also makes them well-suited for detailed interpretability research. The Qwen3 family, for instance, offers open-source, Transformer-based \parencite{vaswani2017attention} models that achieve strong benchmark performance \parencite{qwen3_blog}.
+
+
+\subsubsection*{Interpretability in Language Models}
+Increasing AI model complexity heightens the need to understand their decision processes \parencite{amodei2025urgency}. Methods range from local (e.g., LIME \parencite{ribeiro2016whyitrustyou}, SHAP \parencite{lundberg2017unified}) to global explanations. For Transformers, techniques include attention analysis \parencite{bahdanau2014neural, vig2019analyzing}, probing activations for knowledge \parencite{alain2016understanding, hewitt2019structural, fierro2025multilinguallanguagemodelsremember, wendler2024llamasworkenglishlatent}, causal mediation analysis \parencite{vig2020causal, geiger2021examining}, and mechanistic interpretability (reverse-engineering circuits) \parencite{olah2020zoom, elhage2021mathematical, nanda2023progress, olsson2022context, kantamneni2025languagemodelsusetrigonometry}. Applying these to SLMs helps map abstract task features to neural representations.
+
+
+\subsubsection*{The ARC-AGI Benchmark}  
+Proposed by François Chollet \parencite{chollet2019measure}, ARC-AGI \parencite{arc2024} evaluates human-like general intelligence through visual reasoning puzzles that require pattern inference from examples. Key features include minimal prior knowledge, an emphasis on abstraction and analogy, and resistance to brute-force solutions. ARC-AGI is critical for interpretability, as success in solving these tasks demonstrates genuine generalization, offering valuable insights into the model's reasoning process. Despite recent advances, LLMs still struggle significantly with these tasks \parencite{xu2023comprehensive, ichter2023can}, making ARC-AGI a key frontier for AI reasoning.
+
+
+\section*{Methodology}
+
+This research adopts a focused approach to understand reasoning breakdowns in an SLM (e.g., a Qwen ~1.5B model) on abstract tasks, using careful task selection, robust input representation, and principled application of causal interpretability methods. Depth is prioritized over breadth.
+
+\begin{enumerate}
+    \item \textbf{ARC-AGI Task Curation and Representation Development:} A small, representative subset of ARC-AGI tasks \parencite{chollet2019measure, arc2024} will be selected for testing fundamental reasoning primitives (e.g., symmetry, counting) and amenability to textual/symbolic representation. Various encoding strategies for these visual tasks will be explored and evaluated for expressiveness and impact on initial model interactions (e.g., via probing or attention analysis), a critical step for meaningful input.
+    \item \textbf{Focused Baseline Evaluation and Failure Mode Identification:} The SLM's performance (zero-shot/few-shot, potentially with CoT \parencite{wei2023chainofthoughtpromptingelicitsreasoning}) on curated, encoded ARC-AGI tasks will be evaluated. The goal is not benchmark success, but identifying tasks with intriguing partial successes or, more likely, consistent, analyzable failure modes for deep interpretability.
+    \item \textbf{Mechanistic Interpretability of Failure Modes:} For selected tasks/failures, focused interpretability techniques will be applied. Initial explorations might involve CoT analysis or attention patterns \parencite{vig2019analyzing}, before emphasizing causal methods like activation patching \parencite{zhang2024bestpracticesactivationpatching, dumas2024how, nanda2023factfinding}, and potentially path patching/causal scrubbing \parencite{nanda2023progress, elhage2021mathematical}, to trace information flow and identify components or 'circuits' \parencite{olah2020zoom} failing reasoning steps. Tools include PyTorch, Hugging Face Transformers \parencite{wolf2020transformers}, TransformerLens \parencite{nanda2022transformerlens}. Caution will avoid spurious correlations, validating claims with interventions.
+    \item \textbf{Causal Explanation and Experimental Intervention:} Based on mechanistic analysis, hypotheses about causal chains of specific reasoning breakdowns will be formulated. For localized failures, targeted interventions (e.g., fixing activations, patching representations) will test if model behavior changes predictably, validating causal hypotheses.
+    \item \textbf{Consolidation, Synthesis, and Dissemination:} Results will be synthesized into a narrative around the identified failure modes. Conclusions will address the interplay of input representation, model architecture, and emergent reasoning (or failures). The Master's thesis will document findings and insights.
+\end{enumerate}
+\textbf{Flexibility and Fallback Strategy:} Given ARC-AGI's difficulty and interpretability's exploratory nature, if identifying suitable ARC-AGI tasks with dissectable SLM failure modes proves intractable despite representation efforts, the project will pivot to analyzing SLM behavior on ARC-inspired synthetic tasks. These would have ground-truth reasoning steps, allowing continued rigorous investigation under controlled conditions, ensuring core research questions are addressed.
+
+\section*{Timeline}
+This Master's research is planned over a standard 2-year (4-semester) period, aligning with UFMG's typical program structure:
+
+\begin{itemize}
+    \item \textbf{Semester 1:} Intensive literature review (Methodology Stage 1); SLM/ARC-AGI tool selection/setup; foundational AI/ML coursework.
+    \item \textbf{Semester 2:} Completion of ARC-AGI task curation/representation evaluation and SLM baseline evaluation (Methodology Stages 1 \& 2); initial interpretability experiments (begin Stage 3); further relevant coursework (e.g., NLP, Deep Learning, Reinforcement Learning).
+    \item \textbf{Semester 3:} In-depth interpretability analysis and reasoning process investigation (Stages 3 \& 4); data analysis/synthesis; significant thesis writing progress.
+    \item \textbf{Semester 4:} Completion of experimental work/final analysis (Methodology Stage 4 \& begin Stage 5); final thesis writing, revision; defense preparation.
+\end{itemize}
+Dissertation writing will be ongoing, concentrated in the second year. Coursework will be selected from UFMG's offerings pertinent to AI, interpretability, and research methods.
+
+\printbibliography
+
+\end{document}
