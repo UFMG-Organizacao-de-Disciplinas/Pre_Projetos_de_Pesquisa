@@ -1,6 +1,6 @@
 # Resultado da Prova Objetiva do Processo Seletivo 2025/2 do Departamento de Ciência da Computação
 
-[Link](https://ppgcc.dcc.ufmg.br/wp-content/uploads/2025/06/2025-2-Resultado-Etapa-1.pdf)
+[Resultados 2025.1](https://ppgcc.dcc.ufmg.br/wp-content/uploads/2025/06/2025-2-Resultado-Etapa-1.pdf)
 
 |  \# | Nome                                      | Número do protocolo | NPP (100) | Situação                        |
 | --: | ----------------------------------------- | ------------------- | --------: | ------------------------------- |
