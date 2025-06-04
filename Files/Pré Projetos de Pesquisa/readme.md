@@ -30,7 +30,7 @@
 
 [PDF_2024_2_LuccaCa]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Lucca%20Carvalho%20Augusto/2024_2_LuccaCa.pdf
 [Tex_2024_2_LuccaCa]: https://github.com/UFMG-Organizacao-de-Disciplinas/Pre_Projetos_de_Pesquisa/blob/main/Files/Pr%C3%A9%20Projetos%20de%20Pesquisa/2024_2%20-%20Lucca%20Carvalho%20Augusto/src
-[OvL_2024_2_LuccaCa]: https://www.overleaf.com/project/67f3d6099d710e83beaae073
+[OvL_2024_2_LuccaCa]: https://www.overleaf.com/read/wgfrkzgzxbqx
 
 <!--  -->
 
