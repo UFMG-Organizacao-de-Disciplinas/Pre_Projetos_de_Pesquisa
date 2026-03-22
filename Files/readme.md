@@ -1,264 +1,117 @@
-# Inscrição Seleção de Mestrado - PPGCC/UFMG - Currículo (2024/02)
+# Informações sobre o mestrado
 
-## Obs.: Formulário preenchido por João Vítor Fernandes Dias
+## ANEXO VI – Avaliação do Pré-Projeto de Pesquisa (MESTRADO)
 
-Estou colocando isso aqui para exemplificar como é o formulário que deve ser preenchido pelos ingressantes.
+1. O Pré-Projeto de Pesquisa deve descrever as atividades de pesquisa em Computação que o candidato pretende desenvolver, considerando a abrangência temática do PPGCC e as áreas de concentração em pesquisa de seu corpo docente, disponíveis no site do Programa. O pré-projeto deve conter: a contextualização do problema, destacando sua relevância científica e técnica; objetivos; referencial teórico; metodologia; cronograma e referências.
+2. O Pré-Projeto de Pesquisa deve estar dividido nas seguintes seções: Introdução, Referencial Teórico, Metodologia, Cronograma e Referências. Pré-projetos que não contemplarem as seções acima listadas, receberão nota 0.
+3. O Pré-Projeto de Pesquisa será submetido no momento da inscrição, em formato PDF, e está limitado a 5 páginas, considerando todo o seu conteúdo. O Pré-Projeto de Pesquisa deve ser redigido utilizando fonte tamanho 12 e espaçamento simples. Ele pode ser redigido em português ou em inglês. Pré-projetos que não sejam submetidos em formato PDF ou que tenham mais de 5 páginas receberão nota 0.
+4. A Nota do Pré-Projeto de Pesquisa (NPP) ficará entre 0 e 100 pontos e será atribuída de acordo com os critérios apresen tados na Tabela 6 deste Edital.
 
-Lembre-se que é você deve unir todos seus PDFs em um só arquivo. Para isso, você pode agrupá-los com algo como o $\LaTeX$ ou o [ILovePDF](https://www.ilovepdf.com/pt/juntar_pdf).
+## Tabela 6 - Critérios de avaliação do Pré-Projeto de Pesquisa para MESTRADO
 
-## [1/32]
+| Critério                                                                                                                                                                    | Percentual |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| Introdução (demonstrar capacidade de contextualização do tema de pesquisa e objetivos, aderência do tema às áreas de pesquisa do PPGCC, objetivos)                          | 30%        |
+| Referencial teórico (demonstrar conhecimento da linha de pesquisa escolhida destacando em que pontos a proposta de projeto poderá contribuir na expansão do estado da arte) | 30%        |
+| Metodologia (demonstrar clareza em dar soluções para a linha de pesquisa escolhida)                                                                                         | 10%        |
+| Cronograma (demonstrar exequibilidade da proposta, indicar possíveis disciplinas a cursar e a organização do tempo durante seu período de vínculo ao curso)                 | 10%        |
+| Clareza na redação e capacidade de uso da língua portuguesa                                                                                                                 | 20%        |
 
-INSTRUÇÕES: Para cada item do currículo, apresente um comprovante indicando as páginas em que eles se encontram no PDF enviado durante a inscrição. Para cada campo de comprovantes, indique quantas páginas quiser, separando-as por vírgulas. Exemplo: 5,6,7,10
+## Linhas de pesquisa
 
-ATENÇÃO: Na última página do formulário aparecerá um link. Salve o link caso queira editar as informações  posteriormente.
+### Linha 1 - Sistemas computacionais
 
-- **E-mail** (*)
-  - > <joaovitorfd2000@gmail.com>
-- **Nome Completo** (*): Nome completo do(a) candidato(a).
-  - > João Vítor Fernandes Dias
-- **CPF** (*):
-  - > 12345678900
+1. Análise e Modelagem de Desempenho
+2. Arquitetura de Computadores
+3. Cibersegurança
+4. Computação Ubíqua
+5. Internet das Coisas
+6. Nanocomputação
+7. Redes de Computadores
+8. Redes sem Fio
+9. Segurança de Redes
+10. Sistemas Operacionais
+11. Sistemas Paralelos e Distribuídos
 
-- **Universidade da Graduação** (*) (Digite o nome da Universidade onde obteve sua graduação)
-  - > Universidade Estadual do Norte Fluminense Darcy Ribeiro
-- **Curso de Graduação** (*) (Digite o nome do seu curso de graduação)
-  - > Ciência da Computação
-- **Média do histórico escolar da graduação (MH)** (*) (Vide Anexo IV.1 do Edital)
-  - > 87
-- **Comprovantes** (*) (Páginas no PDF com a documentação comprobatória contendo o diploma e o histórico da graduação (coloque os números das páginas separados por vírgula))
-  - > 1,2,3,4,5,6,7,8
+### Linha 2 - Engenharia de software e Linguagens de programação
 
----
+1. Acessibilidade
+2. Arquitetura de Software
+3. Compiladores
+4. Engenharia de Software
+5. Engenharia Semiótica
+6. Evolução de Software
+7. Interação Humano-Computador
+8. Linguagem de Programação
+9. Sistemas Colaborativos
+10. Teste de Software
+11. Qualidade e Processos de Software
 
-## [2/32] Curso de formação (NCF) - Vide Anexo IV.2 do Edital
+### Linha 3 - Gerenciamento de Dados e Informações
 
-- Curso de formação (NCF) (Escolha o tipo de curso de formação.)
-  - [ ] Mestrado
-  - [ ] Doutorado
-  - [ ] Certificado de conclusão de curso de Pós-graduação lato sensu em nível de especialização, com carga horária igual ou superior a 360 horas-aula
-  - [ ] Certificado de conclusão de curso de curta duração, com no mínimo 30 horas/aula, em Computação ou em área afim à Computação
-  - [X] Certificado de conclusão de curso de certificação profissional em informática, computação ou áreas afins
+1. Análise e Modelagem de Redes Sociais
+2. Banco de Dados
+3. Bibliotecas Digitais
+4. Bioinformática
+5. Ciência de Dados
+6. Infraestruturas de Dados Espaciais
+7. Mineração de Dados
+8. Recuperação de Informação
+9. Redes Complexas
+10. Sistemas de Informação Geográficos (GIS)
+11. Sistemas de Informação para a Web
+12. Sistemas de Recomendação
 
-- **Comprovantes**: Páginas no PDF com a documentação comprobatória referente ao curso de formação (coloque os números das páginas separados por vírgula).
-  - > 9
-- **Adicionar mais um curso de formação? (*)**
-  - [ ] Sim
-  - [X] Não
+### Linha 4 - Robótica, Visão computacional e Processamento gráfico
 
----
+1. Computação Gráfica
+2. Coordenação de Múltiplos Robôs
+3. Enxame de Robôs
+4. Interação Humano-Robô
+5. Jogos Digitais
+6. Processamento de Imagens
+7. Robótica Móvel
+8. Visão Computacional
+9. Visualização de Dados
 
-## [8/32] Premiações (PR) - Vide Anexo IV.3 do Edital
+### Linha 5 - Inteligência artificial
 
-- **Prêmio** - Descreva a premiação recebida e indique as páginas do respectivo comprovante.
-  - > Aluno destaque; 10
-- **Prêmio** - Descreva a premiação recebida e indique as páginas do respectivo comprovante.
-  - > Campeão da prova de missões em robótica com LEGO; 11,12
-- **Prêmio** - Descreva a premiação recebida e indique as páginas do respectivo comprovante.
-  - > Primeiro lugar com ArtBot na Summit Nacional de Robótica; 13,14,15
-- **Prêmio** - Descreva a premiação recebida e indique as páginas do respectivo comprovante.
-- **Prêmio** - Descreva a premiação recebida e indique as páginas do respectivo comprovante.
-- **Demais Prêmios** - Descreva as demais premiações recebidas e indique a página do comprovante (uma entrada por linha).
+1. Agentes Inteligentes
+2. Algoritmos Bioinspirados
+3. Aplicações de IA
+4. Aprendizado de Máquina
+5. Aprendizado Profundo
+6. Computação evolutiva
+7. Heurísticas e Metaheurísticas
+8. Inferência
+9. Interpretabilidade
+10. Processamento de Linguagem Natural
+11. Redes Neurais Artificiais
 
----
+### Linha 6 - Otimização
 
-## [9/32] Experiência Profissional (EP) - Vide Anexo V.1 do Edital
+1. Algoritmos e Aplicações
+2. Heurísticas
+3. Métodos Variacionais
+4. Otimização Combinatória
+5. Otimização de Portfólios
+6. Otimização em Grafos
+7. Pesquisa Operacional
+8. Programação Estocástica
+9. Programação Inteira
+10. Programação Linear e Não Linear
+11. Programação Semidefinida
 
-Nota: Os estágios não entram na seção de Experiência Profissional, devem ser acrescentados na seção Experiência Acadêmico-Científica (EAC), próximo passo do formulário.
+### Linha 7 - Teoria
 
-- Experiência - Descreva sua experiência profissional, ex: Analista de sistemas na empresa XYZ.
-- Data de início - Selecione a data de início da experiência profissional.
-- Data de término - Selecione a data de término da experiência profissional (deixe em branco se for uma experiência atual).
-- Atividades - Descreva as atividades desenvolvidas na Experiência Profissional.
-- Comprovantes - Páginas no PDF com a documentação comprobatória referente à experiência profissional (coloque os números das páginas separados por vírgula).
-- Deseja adicionar mais uma experiência profissional? (*)
-  - [ ] Sim
-  - [X] Não
-
----
-
-## [15/32] Experiência Acadêmico-Científica (EAC) - Vide Anexo V.2 do Edital. Adicione uma experiência acadêmico-científica nesta página
-
-- Experiência Acadêmico-Científica - Escolha o tipo de Experiência Acadêmico-Científica.
-  - [X] Iniciação Científica
-  - [ ] Estágio em Computação, Tecnologia da Informação, Informática ou áreas afins
-  - [ ] Monitoria de disciplinas de graduação
-  - [ ] Outros tipos de experiência acadêmico-científica
-- Data de início - Selecione a data de início da experiência acadêmico-científica.
-  - > 01/10/2019
-- Data de término - Selecione a data de término da experiência acadêmico-científica.
-  - > 30/04/2022
-- Atividades - Descreva as atividades desenvolvidas na Experiência Acadêmico-Científica.
-  - > Desenvolvimento e controle de dispositivos para Internet das Coisas usando o MIT AppInventor para desenvolvimento de aplicativos, Arduino e o módulo bluetooth HC-05; seguido da programação de um aplicativo mobile usando React Native
-  - > 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
-- Deseja adicionar mais uma experiência acadêmico-científica? (*)
-  - [X] Sim
-  - [ ] Não
-
----
-
-## [16/32] Experiência Acadêmico-Científica (EAC) - Vide Anexo V.2 do Edital. Adicione uma experiência acadêmico-científica nesta página
-
-- Experiência Acadêmico-Científica - Escolha o tipo de Experiência Acadêmico-Científica.
-  - [ ] Iniciação Científica
-  - [ ] Estágio em Computação, Tecnologia da Informação, Informática ou áreas afins
-  - [ ] Monitoria de disciplinas de graduação
-  - [X] Outros tipos de experiência acadêmico-científica
-- Data de início - Selecione a data de início da experiência acadêmico-científica.
-  - > 01/09/2021
-- Data de término - Selecione a data de término da experiência acadêmico-científica.
-  - > 30/04/2022
-- Atividades - Descreva as atividades desenvolvidas na Experiência Acadêmico-Científica.
-  - > Iniciação Tecnológica: programação de aplicativos mobile e web para controle de um braço robótico usando cinemática direta através de módulos wifi e bluetooth integrados à microcontroladores
-- Comprovantes - Páginas no PDF com a documentação comprobatória referente à experiência acadêmico-científica (coloque os números das páginas separados por vírgula).
-  - > 33,34,35,36,40
-- Deseja adicionar mais uma experiência acadêmico-científica? (*)
-  - [X] Sim
-  - [ ] Não
-
-## [17/32] Experiência Acadêmico-Científica (EAC) - Vide Anexo V.2 do Edital. Adicione uma experiência acadêmico-científica nesta página
-
-- Experiência Acadêmico-Científica - Escolha o tipo de Experiência Acadêmico-Científica.
-  - [ ] Iniciação Científica
-  - [X] Estágio em Computação, Tecnologia da Informação, Informática ou áreas afins
-  - [ ] Monitoria de disciplinas de graduação
-  - [ ] Outros tipos de experiência acadêmico-científica
-- Data de início - Selecione a data de início da experiência acadêmico-científica.
-  - > 15/02/2022
-- Data de término - Selecione a data de término da experiência acadêmico-científica.
-  - > 04/07/2022
-- Atividades - Descreva as atividades desenvolvidas na Experiência Acadêmico-Científica.
-  - > Programação backend envolvendo bancos de dados, APIs, usando Go e PHP para o site letras.mus.br
-- Comprovantes - Páginas no PDF com a documentação comprobatória referente à experiência acadêmico-científica (coloque os números das páginas separados por vírgula).
-  - > 37,38,39
-- Deseja adicionar mais uma experiência acadêmico-científica? (*)
-  - [X] Sim
-  - [ ] Não
-
----
-
-## [18/32] Experiência Acadêmico-Científica (EAC) - Vide Anexo V.2 do Edital. Adicione uma experiência acadêmico-científica nesta página
-
-- Experiência Acadêmico-Científica - Escolha o tipo de Experiência Acadêmico-Científica.
-  - [ ] Iniciação Científica
-  - [ ] Estágio em Computação, Tecnologia da Informação, Informática ou áreas afins
-  - [ ] Monitoria de disciplinas de graduação
-  - [X] Outros tipos de experiência acadêmico-científica
-- Data de início - Selecione a data de início da experiência acadêmico-científica.
-  - > 01/12/2022
-- Data de término - Selecione a data de término da experiência acadêmico-científica.
-  - > 31/03/2024
-- Atividades - Descreva as atividades desenvolvidas na Experiência Acadêmico-Científica.
-  - > Iniciação Tecnológica: Criação de robôs para participação de competições nas categorias LEGO, artbot, seguidor de linha, combate fairy e cupim; gestão da equipe; modelagem 3D; impressão 3D; solda de componentes eletrônicos; programação em Arduino
-- Comprovantes - Páginas no PDF com a documentação comprobatória referente à experiência acadêmico-científica (coloque os números das páginas separados por vírgula).
-  - > 41,42,43,44,45
-- Deseja adicionar mais uma experiência acadêmico-científica? (*)
-  - [ ] Sim
-  - [X] Não
-
----
-
-## [21/32] Publicações (PUB) - Vide Anexo V.3 do Edital
-
-- Publicação - Escolha o tipo de Publicação.
-  - [ ] Periódico
-  - [x] Conferência
-
-- Ano - Digite o ano da publicação.
-  - > 2020
-- Título - Digite o título da publicação.
-  - > Desenvolvimento de dispositivos microcontrolados com foco em Internet das Coisas
-- Nome - Digite o nome da conferência ou o título do periódico
-  - > XII Congresso Fluminense de Iniciação Científica e Tecnológica (CONFICT)
-- Comprovantes - Páginas no PDF com a documentação comprobatória referente à esta publicação (coloque os números das páginas separados por vírgula).
-  - > 46
-Deseja adicionar mais uma publicação? (*)
-  - [X] Sim
-  - [ ] Não
-
----
-
-## [22/32] Publicações (PUB) - Vide Anexo V.3 do Edital
-
-- Publicação - Escolha o tipo de Publicação.
-  - [ ] Periódico
-  - [X] Conferência
-
-- Ano - Digite o ano da publicação.
-  - > 2021
-- Título - Digite o título da publicação.
-  - > Estudo sobre o controle remoto de dispositivos microcontrolados utilizando dispositivos móveis
-- Nome - Digite o nome da conferência ou o título do periódico
-  - > Coleção desafios das engenharias: Engenharia de computação 3
-- Comprovantes - Páginas no PDF com a documentação comprobatória referente à esta publicação (coloque os números das páginas separados por vírgula).
-  - > 47
-Deseja adicionar mais uma publicação? (*)
-  - [X] Sim
-  - [ ] Não
-
----
-
-## [23/32] Publicações (PUB) - Vide Anexo V.3 do Edital
-
-- Publicação - Escolha o tipo de Publicação.
-  - [X] Periódico
-  - [ ] Conferência
-
-- Ano - Digite o ano da publicação.
-  - > 2021
-- Título - Digite o título da publicação.
-  - > Estudo sobre o controle remoto de dispositivos microcontrolados utilizando dispositivos móveis
-- Nome - Digite o nome da conferência ou o título do periódico
-  - > XIII Congresso Fluminense de Iniciação Científica e Tecnológica (CONFICT)
-- Comprovantes - Páginas no PDF com a documentação comprobatória referente à esta publicação (coloque os números das páginas separados por vírgula).
-  - > 48
-Deseja adicionar mais uma publicação? (*)
-  - [ ] Sim
-  - [X] Não
-
----
-
-## [32/32] Língua Inglesa (LI) - Vide Anexo V.4 do Edital
-
-- Equivalência (*) - Escolha a Equivalência do certificado (vide tabela 2 do Edital)
-  - [ ] IELTS Nível A1
-  - [ ] IELTS Nível A2
-  - [ ] IELTS Nível B1
-  - [ ] IELTS Nível B2
-  - [ ] IELTS Nível C1
-  - [ ] IELTS Nível C2
-  - [ ] TOEIC (nota total) Nível A2
-  - [ ] TOEIC (nota total) Nível B1
-  - [ ] TOEIC (nota total) Nível B2
-  - [ ] TOEIC (nota total) Nível C1
-  - [ ] TOEFL iBT (nota total) Nível A2
-  - [ ] TOEFL iBT (nota total) Nível B1
-  - [ ] TOEFL iBT (nota total) Nível B2
-  - [ ] TOEFL iBT (nota total) Nível C1
-  - [ ] TOEFL ITP Nível A2
-  - [ ] TOEFL ITP Nível B1
-  - [ ] TOEFL ITP Nível B2
-  - [ ] TOEFL ITP Nível C1
-  - [ ] TOEFL ITP Nível C2
-  - [ ] Cambridge Nível FCE Pass
-  - [X] Cambridge Nível CAE Pass, Nível FCE B/C
-  - [ ] Cambridge Nível FCE A, CAE B/C, CPE Pass
-  - [ ] Cambridge Nível CAE A, CPE A/B/C
-  - [ ] CENEX/FALE UFMG Nivel A2
-  - [ ] CENEX/FALE UFMG Nivel B1
-  - [ ] CENEX/FALE UFMG Nivel B2
-  - [ ] CENEX/FALE UFMG Nivel C1
-  - [ ] CENEX/FALE UFMG Nivel C2
-  - [ ] Certificado de cursos de línguas no Brasil, Nível A2
-  - [ ] Declaração do próprio candidato, Nível A1
-- Comprovantes (*) - Páginas no PDF com a documentação comprobatória referente à língua inglesa (coloque os números das páginas separados por vírgula).
-  - > 49
-- Deseja encerrar o formulário? (*) - **ATENÇÃO**: Na próxima tela aparecerá um link. Salve o link caso queira editar o formulário posteriormente.
-  - [X] Encerrar o formulário
-
----
-
-- Inscrição Seleção de Mestrado - PPGCC/UFMG - Currículo (2024/02)
-- Seus dados do currículo foram armazenados.
-
-- [Edite a sua resposta](https://docs.google.com/forms/u/0/d/e/1FAIpQLSffENVd7REb4H90TI4-GHC3HU2EyqFAT9IEo9ik_dERMzqWpA/viewform?usp=form_confirm&edit2=2_ABaOnueREOwZVtuqUBn3GlqJL7MOjprQ0nnvdr3DMLIfpzYK1xII-AbDrORARPBnx6so-jw)
-- [Enviar outra resposta](https://docs.google.com/forms/u/0/d/e/1FAIpQLSffENVd7REb4H90TI4-GHC3HU2EyqFAT9IEo9ik_dERMzqWpA/viewform?usp=form_confirm)
+1. Classes de Grafos
+2. Combinatória Algébrica
+3. Complexidade Computacional
+4. Complexidade Parametrizada
+5. Computação Quântica
+6. Jogos Combinatórios
+7. Matemática Discreta
+8. Métodos formais
+9. Projeto e Análise de Algoritmos
+10. Teoria dos Grafos
+11. Verificação Formal
